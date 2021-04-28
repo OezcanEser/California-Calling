@@ -1,0 +1,86 @@
+/* assets start */
+
+/* font-family: 'Work Sans', sans-serif; */
+
+/* Colors: #fff, #000 */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;700;900&display=swap');
+
+@font-face {
+    font-family: "newLarish";
+    src: url(../fonts/Larish\ Neue\ Semibold.woff2);
+}
+
+@font-face {
+    font-family: "newLarish";
+    src: url(../fonts/LarishNeueSemibold.woff);
+}
+
+/* assets end */
+
+
+
+/* standard style start */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* standard style end */
+
+
+
+/* header start */
+
+header {
+    position: relative;
+    background-color: #000;
+    height: 35vh;
+}
+
+.verLine {
+    border-left: 2px solid #fff;
+    height: 30vh;
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    top: 0;
+}
+
+/* header end */
+
+
+
+/* hero start */
+
+#hero {
+    background-color: #000;
+    height: 65vh;
+    color: #fff;
+}
+
+h1 {
+    margin: 0 auto;
+    font-size: 6rem;
+    line-height: 8.5vh;
+}
+
+p, h1 {
+    text-align: center;
+}
+
+.calling {
+    text-shadow: 1px  1px 1px #fff,
+    1px -1px 1px #fff,
+   -1px  1px 1px #fff,
+   -1px -1px 1px #fff;
+    color: #000;
+}
+
+.p {
+    font-size: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
