@@ -541,15 +541,15 @@ footer p:nth-of-type(2) {
     }
 
     .slideShow {
-        position: relative;
-        width: 600%;
+        width: 600px;
         height: 300px;
-        margin: 5vh 0;
+        display: flex;
+        overflow-x: auto;
     }
 
     .mySlides {
-        position: relative;
-        float: left;
+        flex-shrink: 0;
+        height: 100%;
     }
 
     .mySlides img {
