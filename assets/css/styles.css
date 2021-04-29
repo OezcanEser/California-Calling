@@ -372,18 +372,6 @@ header img {
 }
 /* poppy bear end */
 
-/* join us start */
-
-footer {
-    height: 100vh;
-    color: #fff;
-}
-
-footer h4 {
-    font-size: 2rem;
-}
-
-/* join us end */
 
 /* footer start */
 
@@ -391,15 +379,18 @@ footer {
     display: grid;
     overflow-x: hidden;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     gap: 1vh;
     position: relative;
+    height: 100vh;
+    color: #fff;
+    margin-bottom: 10vh;
 }
 
 footer > div:nth-of-type(1) {
     background-color: #fff;
     transform: rotate(45deg);
-    height: 14vh;
+    height: 13vh;
     width: max-content;
     z-index: -1;
     grid-column: 2 / 4;
@@ -409,15 +400,15 @@ footer > div:nth-of-type(1) {
 footer h2 {
     color: #000;
     width: max-content;
-    animation: slide-left 1s linear 1s infinite alternate-reverse both;
+    animation: slide 5s linear 1s infinite alternate-reverse both;
 }
 
-@keyframes slide-left {
+@keyframes slide {
     0% {
-      transform: translateX(0);
+      transform: translateX(22%);
     }
     100% {
-      transform: translateX(-100px);
+      transform: translateX(-22%);
     }
   }
 
@@ -429,17 +420,21 @@ footer h2 span {
 footer p:nth-of-type(1) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    position: absolute;
+    bottom: 0;
 }
 
 footer h4 {
     grid-column: 1 / 3;
     grid-row: 3 / 4;
+    font-size: 3rem;
 }
 
 footer a {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
     width: 11.5vw;
+    height: 9vh;
 }
 
 footer figure:nth-of-type(1) {
@@ -465,7 +460,141 @@ footer figure:nth-of-type(2) img {
 footer p:nth-of-type(2) {
     grid-column: 1 / 2;
     grid-row: 7 / 8;
+    line-height: 5vh;
 }
 
-
 /* footer end */
+
+@media (min-width: 427px) {
+    .slideShow {
+        display: none;
+    }
+}
+
+@media (max-width: 426px) {
+    #hero h1 {
+        font-size: 3rem;
+        line-height: 5vh;
+    }
+
+    #hero p {
+        font-size: 1.1rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #hero nav {
+        flex-direction: column;
+    }
+    
+    #hero img {
+        width: 50%;
+        align-self: center;
+        margin-bottom: 5vh;
+    }
+
+    #hero a {
+        align-self: center;
+        padding: 3vh 8vw;
+    }
+
+    #lastYear h2 {
+        margin-top: 5vh;
+        font-size: 3rem;
+    }
+
+    #numbers img {
+        z-index: -1;
+    }
+
+    #numbers h2 {
+        font-size: 3rem;
+        margin-bottom: 3vh;
+    }
+
+    #goldBear,
+    #poppyBear,
+    #stuckMiddle {
+        display: block;
+        height: fit-content;
+        }
+
+    #stuckMiddle {
+        padding: 5vw 5vh;
+        overflow: hidden;
+    }
+
+    #stuckMiddle .img1,
+    #stuckMiddle .img2,
+    #stuckMiddle .img3,
+    #stuckMiddle .img4,
+    #stuckMiddle .img5,
+    #stuckMiddle .img6,
+    #stuckMiddle .img7,
+    #poppyBear img:nth-of-type(1),
+    footer > div:nth-of-type(1) {
+        display: none;
+    }
+
+    #stuckMiddle p:nth-of-type(2) {
+        margin-bottom: 5vh;
+    }
+
+    .slideShow {
+        position: relative;
+        width: 600%;
+        height: 300px;
+        margin: 5vh 0;
+    }
+
+    .mySlides {
+        position: relative;
+        float: left;
+    }
+
+    .mySlides img {
+        width: 100vw;
+        height: auto;
+        object-fit: cover;
+        object-position: center; 
+    }
+
+    #goldBear h2,
+    #goldBear p:nth-of-type(1),
+    #goldBear p:nth-of-type(2),
+    #poppyBear p:nth-of-type(1),
+    #poppyBear h2,
+    #poppyBear p:nth-of-type(2),
+    footer p:nth-of-type(1),
+    footer figure:nth-of-type(1) {
+        position: unset;
+        margin-top: 5vh;
+    }
+
+    #goldBear img:nth-of-type(1),
+    #goldBear img:nth-of-type(2),
+    #poppyBear img:nth-of-type(2),
+    #poppyBear img:nth-of-type(3) {
+        width: 80vw;
+        margin: 2.5vh 0 5vh;
+    }
+
+    #poppyBear h4,
+    #poppyBear p:nth-of-type(2) {
+        margin-left: 0;
+    }
+
+    footer {
+        display: block;
+        height: max-content;
+    }
+
+    footer h4 {
+        margin-bottom: 6vh;
+    }
+
+    footer a {
+        padding: 3vh 34.5vw;
+    }
+
+}
