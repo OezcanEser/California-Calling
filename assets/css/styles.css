@@ -541,22 +541,17 @@ footer p:nth-of-type(2) {
     }
 
     .slideShow {
-        width: 600px;
-        height: 300px;
         display: flex;
         overflow-x: auto;
+        margin: 5vh 0;
     }
 
     .mySlides {
-        flex-shrink: 0;
-        height: 100%;
+        margin-right: 5vw;
     }
 
     .mySlides img {
-        width: 100vw;
-        height: auto;
-        object-fit: cover;
-        object-position: center; 
+        width: 80vw;
     }
 
     #goldBear h2,
